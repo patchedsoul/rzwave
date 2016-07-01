@@ -1,0 +1,4 @@
+[package]
+name = "zwave"
+version = "0.0.1"
+authors = ["David Cuddeback <david.cuddeback@gmail.com>"]
