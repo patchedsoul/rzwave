@@ -1,0 +1,30 @@
+before_script:
+  - uname -a
+  - rustup --version
+  - rustup toolchain list
+
+stages:
+  - build
+  - test
+  - bench
+
+build:
+  stage: build
+  tags:
+    - rustup:nightly
+  script:
+    - rustup run nightly cargo build --verbose
+
+test:
+  stage: test
+  tags:
+    - rustup:nightly
+  script:
+    - rustup run nightly cargo test --verbose --no-fail-fast -- --quiet
+
+bench:
+  stage: bench
+  tags:
+    - rustup:nightly
+  script:
+    - rustup run nightly cargo bench --verbose
