@@ -2,6 +2,12 @@
 name = "zwave"
 version = "0.0.1"
 authors = ["David Cuddeback <david.cuddeback@gmail.com>"]
+description = "Control Z-Wave networks with Rust."
+homepage = "https://gitlab.com/dcuddeback/zwave"
+repository = "https://gitlab.com/dcuddeback/zwave"
+license = "MIT"
+readme = "README.md"
+keywords = ["zwave", "home", "automation"]
 
 [dependencies]
 serial = "0.3"
