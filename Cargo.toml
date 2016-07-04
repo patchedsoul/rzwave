@@ -2,3 +2,6 @@
 name = "zwave"
 version = "0.0.1"
 authors = ["David Cuddeback <david.cuddeback@gmail.com>"]
+
+[dependencies]
+serial = "0.3"
